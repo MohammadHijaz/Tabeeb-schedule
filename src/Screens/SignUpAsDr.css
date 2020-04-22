@@ -1,0 +1,42 @@
+.InvDiv {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .Header {
+    color: #00b377;
+    font-size: 50px;
+  }
+  #Hr {
+    border-width: 2px;
+    border-color: #008055;
+  }
+  .Lapel {
+    background-color: #00b386;
+    font-size: 30px;
+    width: 165px;
+    border-radius: 5px;
+    color: #ffffff;
+  }
+  #button {
+    background-color: #00b377;
+    border: 10;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    float: right;
+    border-radius: 15px;
+  }
+  .Pdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  
+  .text {
+    border: none;
+    border-bottom: 2px solid #00b386;
+    height: 30px;
+  }
+  
