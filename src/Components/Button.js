@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 const useStyles = makeStyles({
-  root: {
+  button: {
     background : 'blue',
     border: 0,
     borderRadius: 3,
@@ -10,6 +10,7 @@ const useStyles = makeStyles({
     color: 'white',
     height: 40,
     padding: '0 50px',
+    width:'100%'
   },
 });
 
@@ -17,9 +18,9 @@ export default function Hook(props) {
   const classes = useStyles();
   return ( 
   <Button 
-    className={classes.root}
+    className={classes.button}
     onClick ={props.onClick}
-    style={{background : props.color }}
+    style={{background : props.color , color : props.textColor }}
     >
     {props.text}
   </Button>

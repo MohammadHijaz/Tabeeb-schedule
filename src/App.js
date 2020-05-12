@@ -8,6 +8,7 @@ import SignUpAsDr from './Screens/SignUpAsDr';
 import Login from './Screens/Login';
 import SignUp from './Screens/SignUp';
 import SignUpHl from './Screens/SignUpHl';
+import ColorCode from './Screens/ColorCode';
 export default function App() {
   return (
     <React.Fragment>
@@ -21,6 +22,7 @@ export default function App() {
       <Route path="/SignUpDr" component={SignUpAsDr}/>
       <Route path="/SignUpHl" component={SignUpHl}/>
       <Route path = "/CodeGen" component={Code}/>
+      <Route path="/ColorCode" component={ColorCode}/>
       </Switch>
       </Router>
     </React.Fragment>

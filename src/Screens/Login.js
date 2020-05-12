@@ -9,6 +9,7 @@ class Login extends Component {
           <img src={Doc} alt="doc"/>
         </div>
         
+        
         <h1 className='primary'> Login as</h1>
         <a href="LoginDr">
             <button className="Doc">Doctor</button>
