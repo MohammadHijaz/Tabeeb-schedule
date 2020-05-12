@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
-import RaisedButton from "material-ui/RaisedButton";
 import styles from 'styled-components';
+import Button from '../Components/Button';
 const Container = styles.div `
   display : flex;
   align-items: center;
@@ -46,12 +46,9 @@ export class FormUserDetails extends Component {
             defaultValue={this.state.password}  
           />
           <br />
-          <RaisedButton
-            label="next"
-            primary={true}
-            style={{margin : 15}}
+          <Button
+            text="next"
             onClick={() => {
-              
             }}
           />
         </React.Fragment>

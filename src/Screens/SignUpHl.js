@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
-import RaisedButton from "material-ui/RaisedButton";
+import Button from '../Components/Button';
 import styles from 'styled-components';
 const Container = styles.div `
   display : flex;
@@ -54,10 +54,10 @@ export class SignUpHl extends Component {
     />
     <br />
     <a href="CodeGen">
-    <RaisedButton
-    label="Join"
-    primary={true}
-    style={{margin : 15}}
+    <Button
+    text="Join"
+    color = "red"
+
     />
     </a>
     </React.Fragment>

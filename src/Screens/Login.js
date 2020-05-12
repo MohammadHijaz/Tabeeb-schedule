@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import "./Login.css";
-import Doc from "./doc.png";
+import "../css/Login.css";
+import Doc from "../Images/doc.png";
 class Login extends Component {
   render() {
     return (
