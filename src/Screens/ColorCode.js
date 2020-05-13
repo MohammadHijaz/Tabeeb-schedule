@@ -7,13 +7,13 @@ class ColorCode extends Component {
     state = {
         showPopUp : false,
     }
-    changePopUp() {
+    changePopUp = () => {
         this.setState({showPopUp : !this.state.showPopUp})
     }
     render() {
         return (
 
-            <div className="container22">
+            <div>
                  {this.state.showPopUp ?
                     <PopUp
                         text="anything"
@@ -21,31 +21,36 @@ class ColorCode extends Component {
                     />
                     : null
                 }
-                <div className="column">
-                    <div className="box">
-                        <Button color ="green" text="code Green" onClick={this.changePopUp.bind(this)}/>
-                    </div>
-                    <div className="box">
-                        <Button color="red" text="code Red"/>
-                    </div>
-                        
-                    <div className="box">
-                        <Button color="Blue" text="code Blue"/>
-                    </div>
+                {!this.state.showPopUp ?
+                 <div className="container22">
+                    <div className="column">
+                        <div className="box">
+                            <Button color ="green" text="code Green" onClick={this.changePopUp.bind(this)}/>
+                        </div>
+                        <div className="box">
+                            <Button color="red" text="code Red"/>
+                        </div>
 
+                        <div className="box">
+                            <Button color="Blue" text="code Blue"/>
+                        </div>
+
+                    </div>
+                    <div className="column">
+                        <div className="box">
+                            <Button color="yellow" text="code yellow" textColor="black"/>
+                        </div>
+                        <div className="box">
+                            <Button color="black" text="code Black"/>
+                        </div>
+                        <div className="box">
+                            <Button color="purple" text="code purple"/>
+                        </div>
+                    </div>
                 </div>
-                <div className="column">
-                    <div className="box">
-                        <Button color="yellow" text="code yellow" textColor="black"/>
-                    </div>
-                    <div className="box">
-                        <Button color="black" text="code Black"/>
-                    </div>
-                    <div className="box">
-                        <Button color="purple" text="code purple"/>
-                    </div>
-                </div>
+                    : null }
             </div>
+            
         )
     }
 }
