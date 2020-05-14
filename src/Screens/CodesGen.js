@@ -1,6 +1,7 @@
+ 
 import React, { Component } from 'react';
 import Styles from 'styled-components';
-import Button from '../Components/Button';
+import Button from '@material-ui/core/Button';
   const MainContainer = Styles.div`
   display : flex;
   background-color: turquoise;
@@ -75,7 +76,7 @@ export default class CodesGen extends Component {
               <p class="box">{this.state.code[3]}</p>      
         </div>
         <br/>
-        <Button text="copy" color='red' onClick={() => this.Copy()}/>
+        <Button style={{color : 'red', backgroundColor : 'blue'}} onClick={() => this.Copy()}>Copy</Button>
         <span style={{color : this.state.copiedTextColor , fontWeight : 'bold'}}>{this.state.Text}</span>
       </MainContainer>    
     );

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../css/SignUpAsDr.css";
 import Dpic from '../Images/Dpic.png'
-import Button from '../Components/Button';
+
 export class SignUpAsDr extends Component {
    state = {
     FirstName : "",
@@ -93,8 +93,9 @@ export class SignUpAsDr extends Component {
               />
             </div>
             <br />
-            <Button id="button" text="Signup"  onClick={this.continue}/>
-              
+            <button id="button" primary={true} onClick={this.continue}>
+              sign up
+            </button>
           </div>
         </div>
       </div>

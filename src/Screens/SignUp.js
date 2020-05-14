@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import "../css/SignUp.css"
-import Button from '../Components/Button';
+
 class SignUp extends Component {
   render() {
     return (
@@ -8,15 +8,15 @@ class SignUp extends Component {
         <h1 className='primary'> Sign Up As</h1>
         <br/>
         <a href="SignUpDr">
-            <Button className="Doc" text="Doctor"/> 
+          <button className="Doc">Doctor</button>  
         </a>
         <br/><br/>
         <a href="SignUpHl">
-        <Button className="Doc" text="Hospital"/>
+          <button className="Doc">Hospital</button> 
         </a>
         <br/><br/><br/>
         <a href="/">
-            <Button className="button" text="Back to Login page"/>
+          <button className="button">Back to Login page</button> 
         </a>
       </div>
     );

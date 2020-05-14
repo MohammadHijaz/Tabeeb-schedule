@@ -3,7 +3,7 @@ import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
 import styles from 'styled-components';
-import Button from '../Components/Button';
+import RaisedButton from "material-ui/RaisedButton";
 const Container = styles.div `
   display : flex;
   align-items: center;
@@ -40,6 +40,7 @@ export class LoginAsDr extends Component {
             defaultValue={this.state.firstName}
           />
           <br />
+          
           <TextField
             hintText="enter your email"
             floatingLabelText="email"
@@ -55,8 +56,13 @@ export class LoginAsDr extends Component {
             defaultValue={this.state.password}
           />
           <br />
-          <Button
-            text="next"
+          <RaisedButton
+            label="next"
+            primary={true}
+            style={{margin : 15}}
+            onClick={() => {
+              
+            }}
           />
         </React.Fragment>
       </MuiThemeProvider>
