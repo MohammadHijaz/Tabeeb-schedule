@@ -2,37 +2,38 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: turquoise;
+    background-color:white;
   }
 
 
 .container {
-    text-align: center;
-  margin-top: 30px;
+  height:200px;
+  width: 240px;
+  align-items: center; /* Can be changed in the live sample */
+  background-color: white;
     
    
   }
   
 
 .primary{
-    color:rgb(173, 0, 121)
+    color: white
 }
 .Doc{
     width: 150px;
     height: 40px;
-    color: rgb(173, 0, 121);
+    color: white
 }
 
 
 .text{
     text-align:left ;
-    color: beige;
+    color: white;
     font-size: 17px;
     
 }
 .button{
    margin-right:1200px;
-   width: 100px;
-   height: 40px;
-   color: rgb(173, 0, 121);
+  
+   
 }

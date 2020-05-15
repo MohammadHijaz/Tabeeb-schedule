@@ -13,6 +13,8 @@ const Container = styles.div `
   height : 60%;
   width : 100%;
   padding : 10px;
+  background-color: white;
+
 }
 `
 export class LoginAsDr extends Component {

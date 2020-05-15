@@ -1,30 +1,31 @@
 import React, { Component } from 'react'
-import "../css/Login.css";
 import Doc from "../Images/doc.png";
+import Button from '@material-ui/core/Button';
+import { positions } from '@material-ui/system';
 class Login extends Component {
   render() {
     return (
-      <div className="container">
+      <div className='container'>
         <div>
-          <img src={Doc} alt="doc"/>
+          <img src={Doc} alt="doc" />
         </div>
-        
-        
-        <h1 className='primary'> Login as</h1>
+        <h1 style= {{color:'#bbded6'}}> Login as</h1>
         <a href="LoginDr">
-            <button className="Doc">Doctor</button>
+          <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}>Doctor</Button>
         </a>
-        <br/><br/>
+        <br /><br />
         <a href="LoginHl">
-            <button className="Doc">Hospital</button>
+          <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}>Hospital</Button>
         </a>
-        <h3 className="text" > Don't have an account?</h3>
+        <h3 style= {{color:'#bbded6'}} > Don't have an account?</h3>
         <a href="SignUp">
-            <button className="button">Click me!</button>
+        <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}} r={1200} >Click me!</Button>
         </a>
       </div>
     );
   }
 }
-
+const theme = {
+  spacing: 8,
+}
 export default Login;
