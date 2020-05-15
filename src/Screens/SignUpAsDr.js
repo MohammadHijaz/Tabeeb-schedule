@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../css/SignUpAsDr.css";
 import Dpic from '../Images/Dpic.png'
-
 export class SignUpAsDr extends Component {
    state = {
     FirstName : "",
