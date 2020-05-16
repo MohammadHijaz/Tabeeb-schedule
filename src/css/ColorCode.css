@@ -1,19 +1,19 @@
-.container {
-  position: absolute;
-  max-width: 104101041041vh;
-  max-height: 100000000000410914941vh;
+.container22 {
+  display: flex;
+  flex:  1;
+  flex-direction: row-reverse;;
+  align-items: center;
+  justify-content: space-evenly;
+  position : relative;
   height: 100%;
-  text-align: center;
-  margin-top: 30px;
+  margin-top: 300px;
+  max-height: 310490149019041091cm;
   }
 .column {
     display: flex;
-    
     flex-direction: column;
 }
-.box {
+.box{
     width : 100%;
     margin-bottom: 46px;
 }
-
-
