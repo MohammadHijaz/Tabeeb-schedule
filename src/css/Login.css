@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -13,20 +14,46 @@ body {
   background-color: white;
     
    
+=======
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color:white;
+}
+
+
+.container {
+  position: absolute;
+  max-width: 104101041041vh;
+  max-height: 100000000000410914941vh;
+  height: 100%;
+  text-align: center;
+  margin-top: 30px;
+>>>>>>> hijaz
   }
-  
+
 
 .primary{
+<<<<<<< HEAD
     color: white
 }
 .Doc{
     width: 150px;
     height: 40px;
     color: white
+=======
+  color: white
+}
+.Doc{
+  width: 150px;
+  height: 40px;
+  color: white
+>>>>>>> hijaz
 }
 
 
 .text{
+<<<<<<< HEAD
     text-align:left ;
     color: white;
     font-size: 17px;
@@ -36,4 +63,15 @@ body {
    margin-right:1200px;
   
    
+=======
+  text-align:left ;
+  color: white;
+  font-size: 17px;
+  
+}
+.button{
+ margin-right:1200px;
+
+ 
+>>>>>>> hijaz
 }

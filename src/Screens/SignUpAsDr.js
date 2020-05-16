@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "../css/SignUpAsDr.css";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import Dpic from '../Images/Dpic.png'
-
+import Button from '@material-ui/core/Button';
+import TextField from "material-ui/TextField";
 export class SignUpAsDr extends Component {
    state = {
     FirstName : "",
@@ -15,90 +17,71 @@ export class SignUpAsDr extends Component {
       [input]: e.target.value
     });
   };
-
   render() {
     return (
+      <MuiThemeProvider>
       <div>
+        
         <h1 className="Header">Sign up as a doctor</h1>
-        <hr id="Hr" />
         <div className="Pdiv">
           <div>
             <img src={Dpic} alt="dpic" />
           </div>
           <div className="InvDiv">
-            <h3> </h3>
             <div>
-              <div className="Lapel">
-                <lapel> First name :</lapel>
-              </div>
-
-              <input
-                className="text"
-                type="text"
-                placeholder="First name"
-                onChange={this.handlechange("FirstName")}
-                defaultValue={this.state.FirstName}
-              />
+            <TextField
+              hintText="enter your first name"
+              floatingLabelText="first name"
+              onChange={this.handlechange("FirstName")}
+              defaultValue={this.state.FirstName}
+            />
             </div>
             <br />
             <div>
-              <div className="Lapel">
-                <lapel>Last name : </lapel>
-              </div>
-              <input
-                className="text"
-                type="text"
-                placeholder="Last name"
+              
+              <TextField
+                hintText="enter your last name"
+                floatingLabelText="last name"
                 onChange={this.handlechange("LastName")}
                 defaultValue={this.state.LastName}
               />
             </div>
             <br />
             <div>
-              <div className="Lapel">
-                <lapel>Email: </lapel>
-              </div>
-              <input
-                className="text"
-                type="Email"
-                placeholder="Email"
-                onChange={this.handlechange("Email")}
-                defaultValue={this.state.Email}
-              />
+              
+            <TextField
+              hintText="enter your official email address"
+              floatingLabelText="email"
+              onChange={this.handlechange("email")}
+              defaultValue={this.state.email}
+            />
             </div>
             <br />
             <div>
-              <div className="Lapel">
-                <lapel>Password </lapel>
-              </div>
-              <input
-                className="text"
-                type="password"
-                placeholder="Password"
-                onChange={this.handlechange("Password")}
-                defaultValue={this.state.Password}
-              />
+              
+            <TextField
+              hintText="enter your password"
+              floatingLabelText="password"
+              onChange={this.handlechange("password")}
+              defaultValue={this.state.password}
+            />
             </div>
             <br />
             <div>
-              <div className="Lapel">
-                <lapel>Specialty </lapel>
-              </div>
-              <input
-                className="text"
-                type="text"
-                placeholder="Specialty"
-                onChange={this.handlechange("Specialty")}
-                defaultValue={this.state.Specialty}
-              />
+              
+            <TextField
+              hintText="What's your specialty?"
+              floatingLabelText="Specialty"
+              onChange={this.handlechange("Specialty")}
+              defaultValue={this.state.Specialty}
+            />
             </div>
             <br />
-            <button id="button" primary={true} onClick={this.continue}>
-              sign up
-            </button>
+            <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}>Back to Login page</Button> 
           </div>
         </div>
       </div>
+  </MuiThemeProvider>
     );
   }
 }

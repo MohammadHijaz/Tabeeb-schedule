@@ -3,7 +3,11 @@ import {Nav,Navbar} from 'react-bootstrap';
 import styles from 'styled-components';
 const Container = styles.div`
 .navbar {
+<<<<<<< HEAD
   background-color : #e1ccec;
+=======
+  background-color : #bbded6;
+>>>>>>> hijaz
   padding : 10px
 }
 .navbar-brand {
@@ -13,7 +17,11 @@ const Container = styles.div`
     visibility: hidden;
     font-size : 14px;
     width: 120px;
+<<<<<<< HEAD
     background-color: #e1ccec;
+=======
+    background-color: #bbded6;
+>>>>>>> hijaz
     color: black;
     padding-left: 10px;
     border-radius: 0px;
