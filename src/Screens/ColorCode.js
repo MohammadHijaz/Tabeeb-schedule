@@ -35,26 +35,26 @@ class ColorCode extends Component {
                  <div className="container22">
                     <div className="column">
                         <div className="box">
-                            <Button color ="green" text="code Green" onClick={() => this.changePopUp("green","black","this is the green color code ")}/>
+                            <Button color ="#bbeaa6"  text="code Green" onClick={() => this.changePopUp("#bbeaa6" ,"black","this is the green color code ")}/>
                         </div>
                         <div className="box">
-                            <Button color="red" text="code Red" onClick={() => this.changePopUp("red","black","this is the red color code ")}/>
+                            <Button color="#ff8080" text="code Red" onClick={() => this.changePopUp("#ff8080","black","this is the red color code ")}/>
                         </div>
 
                         <div className="box">
-                            <Button color="Blue" text="code Blue" onClick={() => this.changePopUp("blue","white","this is the blue color code ")}/>
+                            <Button color="#60a9a6" text="code Blue" onClick={() => this.changePopUp("#60a9a6","white","this is the blue color code ")}/>
                         </div>
 
                     </div>
                     <div className="column">
                         <div className="box">
-                            <Button color="yellow" text="code yellow" textColor="black" onClick={() => this.changePopUp("yellow","black","this is the yellow color code ")}/>
+                            <Button color="#f0f696" text="code yellow" textColor="black" onClick={() => this.changePopUp("#f0f696","black","this is the yellow color code ")}/>
                         </div>
                         <div className="box">
-                            <Button color="black" text="code Black" onClick={() => this.changePopUp("black","white","this is the black color code ")}/>
+                            <Button color="#52524e" text="code Black" onClick={() => this.changePopUp("#52524e","white","this is the black color code ")}/>
                         </div>
                         <div className="box">
-                            <Button color="purple" text="code purple" onClick={() => this.changePopUp("purple","white","this is the purple color code ")}/>
+                            <Button color="#cca8e9" text="code purple" onClick={() => this.changePopUp("#cca8e9","white","this is the purple color code ")}/>
                         </div>
                     </div>
                 </div>

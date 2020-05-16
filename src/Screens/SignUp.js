@@ -1,23 +1,29 @@
 import React, { Component } from 'react'
 import "../css/SignUp.css"
-
+import Button from '@material-ui/core/Button';
+import Doc from "../Images/doc.png";
 class SignUp extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className='primary'> Sign Up As</h1>
+        <div>
+          <img src={Doc} alt="doc" />
+        </div>
+        <h1 style= {{color:'#bbded6'}}> Sign Up As</h1>
         <br/>
         <a href="SignUpDr">
-          <button className="Doc">Doctor</button>  
+          <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}>Doctor</Button>  
         </a>
         <br/><br/>
         <a href="SignUpHl">
-          <button className="Doc">Hospital</button> 
+          <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}>Hospital</Button> 
         </a>
         <br/><br/><br/>
+        <div style= {{position:'absolute', left:0 ,top: 500}}>
         <a href="/">
-          <button className="button">Back to Login page</button> 
+          <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}>Back to Login page</Button> 
         </a>
+        </div>
       </div>
     );
   }

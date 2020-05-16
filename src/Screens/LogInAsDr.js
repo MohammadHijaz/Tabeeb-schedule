@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
 import styles from 'styled-components';
-import RaisedButton from "material-ui/RaisedButton";
+import Button from '@material-ui/core/Button';
+import { withStyles } from "@material-ui/core/styles";
 const Container = styles.div `
   display : flex;
   align-items: center;
@@ -14,6 +14,7 @@ const Container = styles.div `
   width : 100%;
   padding : 10px;
 }
+
 `
 export class LoginAsDr extends Component {
   state = {
@@ -26,14 +27,16 @@ export class LoginAsDr extends Component {
       [input]: e.target.value
     });
   };
+  
 
   render() {
     return (
     <Container>
       <MuiThemeProvider>
         <React.Fragment>
-          <AppBar title="Log In As A Dr" />
+          
           <TextField
+            inputProps={{ style: { color: 'white'}}}
             hintText="enter your name"
             floatingLabelText="first name"
             onChange={this.handlechange("firstName")}
@@ -42,6 +45,7 @@ export class LoginAsDr extends Component {
           <br />
           
           <TextField
+            inputProps={{ style: { color: 'white'}}}
             hintText="enter your email"
             floatingLabelText="email"
             onChange={this.handlechange("email")}
@@ -49,6 +53,7 @@ export class LoginAsDr extends Component {
           />
           <br />
           <TextField
+            inputProps={{ style: { color: 'white'}}}
             hintText="enter your password"
             floatingLabelText="password"
             type="password"
@@ -56,14 +61,7 @@ export class LoginAsDr extends Component {
             defaultValue={this.state.password}
           />
           <br />
-          <RaisedButton
-            label="next"
-            primary={true}
-            style={{margin : 15}}
-            onClick={() => {
-              
-            }}
-          />
+          <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}  >Log In</Button>
         </React.Fragment>
       </MuiThemeProvider>
     </Container>
