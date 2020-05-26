@@ -9,6 +9,8 @@ import Login from './Screens/Login';
 import SignUp from './Screens/SignUp';
 import SignUpHl from './Screens/SignUpHl';
 import ColorCode from './Screens/ColorCode';
+import Htable from './Screens/HTable';
+import Form from './Screens/Form';
 export default function App() {
   return (
     <React.Fragment>
@@ -23,6 +25,9 @@ export default function App() {
       <Route path="/SignUpHl" component={SignUpHl}/>
       <Route path = "/CodeGen" component={Code}/>
       <Route path="/ColorCode" component={ColorCode}/>
+      <Route path="/Htable" component={Htable}/>
+      <Route path="/Form" component={Form}/>
+  
       </Switch>
       </Router>
     </React.Fragment>

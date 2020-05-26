@@ -44,7 +44,10 @@ export class FormUserDetails extends Component {
             defaultValue={this.state.password}  
           />
           <br />
+          <a href='/Form'>
           <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}  >Log In</Button>
+
+          </a>
         </React.Fragment>
       </MuiThemeProvider>
     </Container>
