@@ -20,16 +20,18 @@ const useStyles = makeStyles({
         bottom: '25%',  
         margin: 'auto',  
         borderradius: '20px',  
-        background: 'white',  
+        background: 'white',
       },
   }); 
 export default function Hook(props) {
     const classes = useStyles();
     return (
         <div className={classes.popup}>
-            <div className={classes.innerPopup}>
-                <h1>{props.text}</h1>
-                <button onClick={props.close}>close</button>
+            <div className={classes.innerPopup} style={{backgroundColor : props.background}}>
+                <h1 style={{position : "absolute",top : -5, color : props.color}}>{props.title}</h1>
+                <br></br> <br></br>
+                <span style={{color : props.color}}>{props.text}</span>
+                <button onClick={props.close} style={{position : "absolute",top : 450, left : 0}}>close</button>
             </div>
 
         </div>

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
-import Button from '../Components/Button';
+import Button from '@material-ui/core/Button';
 import styles from 'styled-components';
 const Container = styles.div `
   display : flex;
@@ -31,7 +30,6 @@ export class SignUpHl extends Component {
   <Container>
     <MuiThemeProvider>
     <React.Fragment>
-    <AppBar title="Make an account for your hospital today !" />
     <TextField
     hintText="enter your hospital's name"
     floatingLabelText="Hospital's name"
@@ -54,11 +52,7 @@ export class SignUpHl extends Component {
     />
     <br />
     <a href="CodeGen">
-    <Button
-    text="Join"
-    color = "red"
-
-    />
+    <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}  >Join</Button>
     </a>
     </React.Fragment>
     </MuiThemeProvider>

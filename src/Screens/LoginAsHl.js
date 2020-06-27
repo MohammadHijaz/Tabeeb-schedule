@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import AppBar from "material-ui/AppBar";
 import TextField from "material-ui/TextField";
 import styles from 'styled-components';
-import RaisedButton from "material-ui/RaisedButton";
+import Button from '@material-ui/core/Button';
 const Container = styles.div `
   display : flex;
   align-items: center;
@@ -30,7 +29,6 @@ export class FormUserDetails extends Component {
     <Container>
       <MuiThemeProvider>
         <React.Fragment>
-          <AppBar title="Log In As A Hospital" />
           <TextField
             hintText="enter your hospital's code"
             floatingLabelText="hospital's code"
@@ -46,14 +44,10 @@ export class FormUserDetails extends Component {
             defaultValue={this.state.password}  
           />
           <br />
-          <RaisedButton
-            label="next"
-            primary={true}
-            style={{margin : 15}}
-            onClick={() => {
-              
-            }}
-          />
+          <a href='/Form'>
+          <Button variant="outlined" style={{color : 'white', backgroundColor : '#e1ccec'}}  >Log In</Button>
+
+          </a>
         </React.Fragment>
       </MuiThemeProvider>
     </Container>
