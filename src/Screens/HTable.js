@@ -15,35 +15,37 @@ function createData(name, place, time, notes) {
 }
 
 export class HTable extends Component {
-    constructor() {
-        super()
-        this.state = {
-            rows :[
-                createData(
-                    <TextField hintText="name" />,
-                    <TextField hintText="place" />,
-                    <TextField hintText="time" />,
-                    <TextField hintText="notes" />
-                    ),
-                ] 
-                    }
-                }
-    add() {
-        this.state.rows.push(
-            createData(
-                <TextField hintText="name" />,
-                <TextField hintText="place" />,
-                <TextField hintText="time" />,
-                <TextField hintText="notes" />
-                )
-            );
-            this.forceUpdate();
-        }                    
-    render() {
+  constructor() {
+    super();
+    this.state = {
+      rows: [
+        createData(
+          <TextField hintText="name" />,
+          <TextField hintText="place" />,
+          <TextField hintText="time" />,
+          <TextField hintText="notes" />
+        ),
+      ],
+    };
+  }
+  add() {
+    this.setState((prevState) => ({
+      rows: [
+        ...prevState.rows,
+        createData(
+          <TextField hintText="name" />,
+          <TextField hintText="place" />,
+          <TextField hintText="time" />,
+          <TextField hintText="notes" />
+        ),
+      ],
+    }));
+  }
+  render() {
     return (
       <MuiThemeProvider>
         <React.Fragment>
-          <AppBar title="Hospital's schedule" style={{marginTop: 30}} />
+          <AppBar title="Hospital's schedule" style={{ marginTop: 30 }} />
           <TableContainer component={Paper}>
             <Table aria-label="simple table">
               <TableHead>
@@ -55,7 +57,7 @@ export class HTable extends Component {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {this.state.rows.map(row => (
+                {this.state.rows.map((row) => (
                   <TableRow key={row.name}>
                     <TableCell component="th" scope="row">
                       {row.name}
@@ -68,7 +70,7 @@ export class HTable extends Component {
               </TableBody>
             </Table>
           </TableContainer>
-          <RaisedButton  label="New" primary={true} onClick={() => this.add()} />
+          <RaisedButton label="New" primary={true} onClick={() => this.add()} />
         </React.Fragment>
       </MuiThemeProvider>
     );

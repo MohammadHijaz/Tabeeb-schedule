@@ -1,6 +1,6 @@
-import React,{Component} from 'react';
-import {Nav,Navbar} from 'react-bootstrap';
-import styles from 'styled-components';
+import React, { Component } from "react";
+import { Nav, Navbar } from "react-bootstrap";
+import styles from "styled-components";
 const Container = styles.div`
 .navbar {
   background-color : #bbded6;
@@ -40,27 +40,26 @@ const Container = styles.div`
     color : white; 
   }
 }
-`
-export default class NavBar extends Component  {
+`;
+export default class NavBar extends Component {
   shouldComponentUpdate = false;
   render() {
-
     return (
       <Container>
-      <Navbar expand="lg">
-      <Navbar.Brand>Home
-      <span class="text1">Welocme to Our Website</span>
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-      <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="ml-auto">
-      <Nav.Link href="/">Login</Nav.Link>
-      <Nav.Link href="SignUp">SignUp</Nav.Link>
-      </Nav>
-      </Navbar.Collapse>
-      </Navbar>
-      </Container> 
-      );
-    }
+        <Navbar expand="lg">
+          <Navbar.Brand>
+            Home
+            <span class="text1">Welocme to Our Website</span>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link href="/">Login</Nav.Link>
+              <Nav.Link href="SignUp">SignUp</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+      </Container>
+    );
   }
-    
+}
