@@ -28,8 +28,11 @@ const useStyles = makeStyles({
     },
     button: {
         width: "10%",
-        marginTop: "21em",
-        marginLeft: "1em"
+        marginTop: "auto",
+        marginLeft: "auto",
+        marginBottom: "1em",
+        marginRight: "1em",
+
     }
 });
 export default function Hook(props) {
