@@ -28,10 +28,10 @@ export class HTable extends Component {
       ],
     };
   }
-  add() {
-    this.setState((prevState) => ({
+  add = () => {
+    this.setState({
       rows: [
-        ...prevState.rows,
+        ...this.state.rows,
         createData(
           <TextField hintText="name" />,
           <TextField hintText="place" />,
@@ -39,8 +39,8 @@ export class HTable extends Component {
           <TextField hintText="notes" />
         ),
       ],
-    }));
-  }
+    });
+  };
   render() {
     return (
       <MuiThemeProvider>
