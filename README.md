@@ -7,6 +7,5 @@ The idea of the app is to make an internal schedule app for the doctors, by prov
 ![Screenshot from 2020-06-27 07-44-21](https://user-images.githubusercontent.com/59106708/85921443-6a602d00-b84a-11ea-8a92-5313f5713655.png)
 ![Screenshot from 2020-06-27 07-44-55](https://user-images.githubusercontent.com/59106708/85921446-70560e00-b84a-11ea-834f-2ef8813ccdd1.png)
 ![Screenshot from 2020-06-27 07-45-12](https://user-images.githubusercontent.com/59106708/85921451-751ac200-b84a-11ea-9058-743ebf71613e.png)
-![Screenshot from 2020-06-27 07-45-17](https://user-images.githubusercontent.com/59106708/85921459-7d72fd00-b84a-11ea-90a1-757539fe4de8.png)
 ![Screenshot from 2020-06-27 07-45-29](https://user-images.githubusercontent.com/59106708/85921464-84017480-b84a-11ea-877b-006f45460c5a.png)
 ![Screenshot from 2020-06-27 07-45-41](https://user-images.githubusercontent.com/59106708/85921468-882d9200-b84a-11ea-806c-cde1cf1466f0.png)
